@@ -10,6 +10,10 @@ Singleton* Singleton::get_instance() {
     return m_singleton;
 }
 
+Singleton::~Singleton() {
+    Singleton::m_singleton = nullptr;
+}
+
 void Singleton::set_value(int value) {
     m_value = value;
 }
