@@ -14,11 +14,16 @@ private:
 
 class Example
 {
-private:
-    int topSecretValue ;
+
 public:
+    int get_topSecret_Value() 
+    {
+        return topSecretValue;
+    }
     Example() { topSecretValue = 42; }
     bool somePublicBool;
     int somePublicInt;
     std::string somePublicString;
+private:
+    int topSecretValue ;
 };
